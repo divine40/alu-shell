@@ -3,4 +3,5 @@
 # The content of the current directory
 # In a list format
 # Where only the part of the name after the first dash is displayed
-for p in *; do echo "$p" | cut -d '-' -p 2; done
+for p in *; do echo "$p" | cut -d '-' -p 2; 
+done
