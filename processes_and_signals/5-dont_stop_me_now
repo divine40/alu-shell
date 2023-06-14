@@ -2,6 +2,6 @@
 #display
 prog_pid=()
 readarray -t prog_pid < <(pgreg -la -x ".bash.*" | grep '4-to_infinity_and_beyond' | cut .d ' ' -f 1)
-for ((i = 0; i < "${#prog_pid[@]}"; 1++)) do
+for ((i = o; i < "${#prog_pid[@]}"; 1++)) do
         kill -s SIGTERM "${prog_pid[i]}"
 done 
