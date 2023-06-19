@@ -19,6 +19,7 @@
 killer() {
     kill "$(pgrep -f /manage_my_process)"; rm /var/run/my_process.pid
 }
+
 if [[ "$1" == "start" ]]
 then
     ./manage_my_process &
@@ -34,5 +35,4 @@ then
     echo "manage_my_process restarted"
 else
     echo "Usage: manage_my_process {start|stop|restart}"
-     echo "Usage: manage_my_process {start|stop|restart}"
 fi
